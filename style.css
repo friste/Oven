@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #101010;
+  color: #fff;
+  font-family: 'Heebo', sans-serif;
+}
+
+body {
+  padding: 20px;
+}
+
+.timer-group {
+  height: 400px;
+  margin: 0 auto;
+  position: relative;
+  width: 400px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.timer {
+  border-radius: 50%;
+  height: 100px;
+  overflow: hidden;
+  position: absolute;
+  width: 100px;
+}
+
+.timer:after {
+  background: #101010;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 80px;
+  left: 10px;
+  position: absolute;
+  width: 80px;
+  top: 10px;
+}
+
+.timer .hand {
+  float: left;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 50%;
+}
+
+.timer .hand span {
+  border: 1px solid rgba(0, 255, 255, .4);
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+
+  display: block;
+  height: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: rotate(225deg);
+  width: 0;
+}
+
+.timer .hand:first-child {
+  transform: rotate(180deg);
+}
+
+.timer .hand span {
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.timer .hand:first-child span {
+  animation-name: spin1;
+}
+
+.timer .hand:last-child span {
+  animation-name: spin2; 
+}
+
+
+.timer.minute {
+  background: rgba(0, 0, 0, .2);
+  height: 350px;
+  left: 25px;
+  width: 350px;
+  top: 25px;
+}
+
+.timer.minute .hand span {
+  animation-duration: 60s;
+  border-top-color: #eb6262;
+  border-right-color: #eb6262;
+  border-width: 175px;
+}
+
+.timer.minute:after {
+  height: 310px;
+  left: 20px;
+  width: 310px;
+  top: 20px;
+}
+
+
+
+.clock {
+  border-radius: 50%;
+  text-align: center;
+  grid-column-start: 1;
+  grid-row-start: 3;
+  z-index: 2;
+  
+}
+
+.clock h2 {
+  font-weight: 300; 
+}
+
+.clock p {
+  margin-top:400px;
+  font-size: 76px;
+  font-weight: 400;
+  text-align: center;
+}
+
+@keyframes spin1 {
+  0% {
+    transform: rotate(225deg);
+  }
+  50% {
+    transform: rotate(225deg);
+  }
+  100% {
+    transform: rotate(405deg);
+  }
+}
+
+@keyframes spin2 {
+  0% {
+    transform: rotate(225deg);
+  }
+  50% {
+    transform: rotate(405deg);
+  }
+  100% {
+    transform: rotate(405deg);
+  }
+}

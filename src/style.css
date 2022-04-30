@@ -18,6 +18,7 @@ body {
   height: 400px;
   margin: 0 auto;
   position: relative;
+  top:100px;
   width: 400px;
   display: grid;
   grid-template-columns: 1fr;

@@ -12,17 +12,34 @@ html {
 
 body {
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .timer-group {
   height: 400px;
   margin: 0 auto;
-  position: relative;
-  top:100px;
+  position: absolute;
+  top: 20px;
   width: 400px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+}
+
+.slider {
+  display: block;
+  margin-right: auto;
+  margin-left:auto;
+  position: relative;
+}
+
+.button {
+  margin: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
 }
 
 .timer {
@@ -85,8 +102,7 @@ body {
   animation-name: spin2; 
 }
 
-
-.timer.minute {
+.timer.minute{
   background: rgba(0, 0, 0, .2);
   height: 350px;
   left: 25px;
@@ -94,7 +110,7 @@ body {
   top: 25px;
 }
 
-.timer.minute .hand span {
+.timer.minute .hand span, .rs-path-color {
   animation-duration: 60s;
   border-top-color: #eb6262;
   border-right-color: #eb6262;
@@ -107,8 +123,6 @@ body {
   width: 310px;
   top: 20px;
 }
-
-
 
 .clock {
   border-radius: 50%;

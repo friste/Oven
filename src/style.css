@@ -30,7 +30,8 @@ body {
 .slider {
     margin-right: auto;
     margin-left: auto;
-    top: -260px;
+    /* top: -260px; */
+    top: 20px;
     position: absolute;
 }
 
@@ -71,7 +72,7 @@ img {
     margin: 10px;
     margin-right: auto;
     margin-left: auto;
-    top: 232px;
+    /* top: 232px; */
     width: 50px;
     height: 20px;
     text-decoration: none;
@@ -218,6 +219,7 @@ img {
     width: 315px;
     margin-right: auto;
     margin-left: auto;
+    /* top: 65px; */
     top: 65px;
     background-color: #131211;
     border-radius: 50%;

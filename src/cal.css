@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap');
+
+html {
+  background: #101010;
+  color: #fff;
+  font-family: 'Heebo', sans-serif;
+}
+
+.description {
+  position: relative;
+  margin-top: 200px;
+}
+
+.description h1 {
+  text-align: center;
+  font-size: 20px;
+}
+
+.description h2 {
+  text-align: center;
+  font-size: 16px;
+}
+
+.button {
+  width: 15px;
+  height: 15px;
+  text-decoration: none;
+  display: inline-block;
+  outline: none;
+  cursor: default;
+  border-style: none;
+  color: white;
+  background-color: #ee6161;
+  border-radius: 100%;
+  overflow: none;
+  text-align: center;
+  opacity: 1.0;
+}
+
+.next {
+  width: 50px;
+  height: 20px;
+  text-decoration: none;
+  display: inline-block;
+  outline: none;
+  border-style: none;
+  color: white;
+  background-color: #5eba7d;
+  border-radius: 15%;
+  overflow: none;
+  text-align: center;
+  font-family: 'Heebo', sans-serif;
+}
+#next {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#b1 {
+  position: absolute;
+  top: 70px;
+  left: 30vw;
+}
+
+#b2 {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#b3 {
+  position: absolute;
+  top: 70px;
+  right: 2vw;
+}
+
+#b4 {
+  position: absolute;
+  top: 50%;
+  left: 2vw;
+}
+
+#b5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#b6 {
+  position: absolute;
+  top: 50%;
+  right: 2vw;
+}
+
+#b7 {
+  position: absolute;
+  bottom: 70px;
+  left: 2vw;
+}
+
+#b8 {
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#b9 {
+  position: absolute;
+  bottom: 70px;
+  right: 2vw;
+}

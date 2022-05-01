@@ -1,60 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap');
-
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  background: #101010;
-  color: #fff;
-  font-family: 'Heebo', sans-serif;
+    background: #101010;
+    color: #fff;
+    font-family: 'Heebo', sans-serif;
 }
 
 body {
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .timer-group {
-  height: 400px;
-  margin: 0 auto;
-  position: absolute;
-  top: 20px;
-  width: 400px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+    height: 400px;
+    margin: 0 auto;
+    position: absolute;
+    top: 20px;
+    width: 400px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 .slider {
-
-  margin-right: auto;
-  margin-left:auto;
-  top: 20px;
-  position: absolute;
+    margin-right: auto;
+    margin-left: auto;
+    top: -260px;
+    position: absolute;
 }
 
 #slider .rs-range-color {
-  background-color: #eb6262;
+    background-color: #eb6262;
 }
 
 #slider .rs-path-color {
-  background-color: #0c0c0c;
+    background-color: #0c0c0c;
 }
 
 #slider .rs-border {
-  border-width: 0px;
-  border-color: transparent;
-  
+    border-width: 0px;
+    border-color: transparent;
 }
+
 #slider .rs-tooltip {
-  color: #eb6262;
-  font-size: 70px;
-  font-family: 'Heebo', sans-serif;
-  top: 120%;
-  left: 50%;
+    color: #eb6262;
+    font-size: 70px;
+    font-family: 'Heebo', sans-serif;
+    top: 120%;
+    left: 50%;
 }
 
 img {
@@ -62,167 +60,167 @@ img {
     margin-right: auto;
     margin-left: auto;
     border-radius: 100%;
-    top: 50px;
-    height: 395px;
-    width: 395px;
+    top: 55px;
+    height: 340px;
+    width: 340px;
     z-index: 5;
     position: absolute;
 }
 
 .button {
-  margin: 10px;
-  margin-right: auto;
-  margin-left: auto;
-  width: 50px;
-  height: 20px;
-  text-decoration: none;
-  display: inline-block;
-  outline: none;
-  border-style: none;
-  color: white;
-  background-color: #5eba7d;
-  border-radius: 15%;
-  overflow: none;
-  text-align: center;
-  font-family: 'Heebo', sans-serif;
-  position: absolute;
-  z-index: 6;
+    margin: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    top: 232px;
+    width: 50px;
+    height: 20px;
+    text-decoration: none;
+    display: inline-block;
+    outline: none;
+    border-style: none;
+    color: white;
+    background-color: #5eba7d;
+    border-radius: 15%;
+    overflow: none;
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    position: absolute;
+    z-index: 6;
 }
 
 .timer {
-  border-radius: 50%;
-  height: 100px;
-  overflow: hidden;
-  position: absolute;
-  width: 100px;
+    border-radius: 50%;
+    height: 100px;
+    overflow: hidden;
+    position: absolute;
+    width: 100px;
 }
 
 .timer:after {
-  background: #101010;
-  border-radius: 50%;
-  content: "";
-  display: block;
-  height: 80px;
-  left: 10px;
-  position: absolute;
-  width: 80px;
-  top: 10px;
+    background: #101010;
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 80px;
+    left: 10px;
+    position: absolute;
+    width: 80px;
+    top: 10px;
 }
 
 .timer .hand {
-  float: left;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  width: 50%;
+    float: left;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 50%;
 }
 
 .timer .hand span {
-  border: 1px solid rgba(0, 255, 255, .4);
-  border-bottom-color: transparent;
-  border-left-color: transparent;
-
-  display: block;
-  height: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transform: rotate(225deg);
-  width: 0;
+    border: 1px solid rgba(0, 255, 255, .4);
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    display: block;
+    height: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: rotate(225deg);
+    width: 0;
 }
 
 .timer .hand:first-child {
-  transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 .timer .hand span {
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 .timer .hand:first-child span {
-  animation-name: spin1;
+    animation-name: spin1;
 }
 
 .timer .hand:last-child span {
-  animation-name: spin2; 
+    animation-name: spin2;
 }
 
-.timer.minute{
-  background: rgba(0, 0, 0, .2);
-  height: 350px;
-  left: 25px;
-  width: 350px;
-  top: 25px;
+.timer.minute {
+    background: rgba(0, 0, 0, .2);
+    height: 350px;
+    left: 25px;
+    width: 350px;
+    top: 25px;
 }
 
-.timer.minute .hand span, .rs-path-color {
-  animation-duration: 60s;
-  border-top-color: #eb6262;
-  border-right-color: #eb6262;
-  border-width: 175px;
+.timer.minute .hand span,
+.rs-path-color {
+    animation-duration: 60s;
+    border-top-color: #eb6262;
+    border-right-color: #eb6262;
+    border-width: 175px;
 }
 
 .timer.minute:after {
-  height: 310px;
-  left: 20px;
-  width: 310px;
-  top: 20px;
+    height: 310px;
+    left: 20px;
+    width: 310px;
+    top: 20px;
 }
 
 .clock {
-  border-radius: 50%;
-  text-align: center;
-  grid-column-start: 1;
-  grid-row-start: 3;
-  z-index: 2;
-  
+    border-radius: 50%;
+    text-align: center;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    z-index: 2;
 }
 
 .clock h2 {
-  font-weight: 300; 
+    font-weight: 300;
 }
 
 .clock p {
-  margin-top:400px;
-  font-size: 76px;
-  font-weight: 400;
-  text-align: center;
+    margin-top: 400px;
+    font-size: 76px;
+    font-weight: 400;
+    text-align: center;
 }
 
 @keyframes spin1 {
-  0% {
-    transform: rotate(225deg);
-  }
-  50% {
-    transform: rotate(225deg);
-  }
-  100% {
-    transform: rotate(405deg);
-  }
+    0% {
+        transform: rotate(225deg);
+    }
+    50% {
+        transform: rotate(225deg);
+    }
+    100% {
+        transform: rotate(405deg);
+    }
 }
 
 @keyframes spin2 {
-  0% {
-    transform: rotate(225deg);
-  }
-  50% {
-    transform: rotate(405deg);
-  }
-  100% {
-    transform: rotate(405deg);
-  }
+    0% {
+        transform: rotate(225deg);
+    }
+    50% {
+        transform: rotate(405deg);
+    }
+    100% {
+        transform: rotate(405deg);
+    }
 }
 
 .dot {
-  height: 365px;
-  width: 365px;
-  margin-right: auto;
-  margin-left: auto;
-  top: 65px;
-  background-color: #131211;
-  border-radius: 50%;
-  position: absolute;
-  z-index: 4;
+    height: 315px;
+    width: 315px;
+    margin-right: auto;
+    margin-left: auto;
+    top: 65px;
+    background-color: #131211;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 4;
 }

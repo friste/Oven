@@ -65,7 +65,7 @@ img {
     top: 50px;
     height: 395px;
     width: 395px;
-    z-index: 4;
+    z-index: 5;
     position: absolute;
 }
 
@@ -86,7 +86,7 @@ img {
   text-align: center;
   font-family: 'Heebo', sans-serif;
   position: absolute;
-  z-index: 5;
+  z-index: 6;
 }
 
 .timer {

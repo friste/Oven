@@ -30,7 +30,7 @@ confirmButton.textContent = "Cook"
 function traceEvent(e) {
     if (slider.getValue() >= 10 && slider.getValue() <= 32) {
         console.log("test");
-        document.getElementById("pizza").src = "./PIZZAS/cheese/raw_cheese4.png";
+        document.getElementById("pizza").src = "./PIZZAS/cheese/Raw_cheese4.png";
     } else if (slider.getValue() >= 33 && slider.getValue() <= 54) {
         document.getElementById("pizza").src = "./PIZZAS/pepperoni/cooked.png";
     } else if (slider.getValue() >= 55 && slider.getValue() <= 76) {

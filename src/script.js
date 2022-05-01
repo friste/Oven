@@ -1,3 +1,13 @@
+let dur = 30;
+let durString = dur.toString();
+let newDur = durString.concat("s");
+
+var nhand1 = document.getElementById("clk");
+var nhand2 = document.getElementById("clk2");
+nhand1.style.animationDuration = newDur;
+nhand2.style.animationDuration = newDur;
+
+
 let flag = false;
 var pizza = "none";
 var defaults = {},
@@ -6,6 +16,7 @@ var defaults = {},
     one_hour = one_minute * 60,
     startDate = new Date(),
     clock = document.getElementById('time');
+
 
 if (sessionStorage.getItem("duration") >= 10 && sessionStorage.getItem("duration") <= 32) {
     console.log("test");
@@ -55,7 +66,7 @@ function tick() {
         parts[2] = (parts[2].length == 1) ? '0' + parts[2] : parts[2];
         let partSeconds = (parts[0] * 3600) + (parts[1] * 60) + parts[2];
         // let dur = sessionStorage.getItem("duration") * 60;
-        let dur = 60;
+        // let dur = 60;
         // if (partSeconds == 5) {
         //     console.log(partSeconds);
         //     document.getElementById("pizza").src = "./PIZZAS/cheese/Raw_cheese4.png";
@@ -99,7 +110,7 @@ function tick() {
             } else if (pizza == "pepperoni") {
                 document.getElementById("pizza").src = "./PIZZAS/pepperoni/stage2.png";
             }
-        } else if (partSeconds > (dur * 3) / 4 && partSeconds <= dur) {
+        } else if (partSeconds > (dur * 3) / 4 && partSeconds < dur) {
             if (pizza == "cheese") {
                 document.getElementById("pizza").src = "./PIZZAS/cheese/Raw_cheese4.png";
             } else if (pizza == "veggie") {
@@ -111,6 +122,12 @@ function tick() {
             } else if (pizza == "pepperoni") {
                 document.getElementById("pizza").src = "./PIZZAS/pepperoni/cooked.png";
             }
+        } else if (partSeconds == dur) {
+            flag = true;
+            var hand1 = document.getElementById("clk");
+            var hand2 = document.getElementById("clk2");
+            hand1.style.animationPlayState = 'paused';
+            hand2.style.animationPlayState = 'paused';
         }
 
 
@@ -120,3 +137,4 @@ function tick() {
     }
 
 }
+

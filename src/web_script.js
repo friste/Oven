@@ -38,11 +38,15 @@ webgazer
                 // image.classList.add("left")
                 document.getElementById("pizza").src = "./PIZZAS/cheese/Raw_cheese_burnt.png";
                 pizza = "burnt"
+                stopCook()
+                flag = true;
                 console.log("LEFT")
             } else if (direction == "R" || direction == "D") {
                 // image.classList.add("right")
                 document.getElementById("pizza").src = "./PIZZAS/cheese/Raw_cheese_burnt.png";
                 pizza = "burnt"
+                stopCook()
+                flag = true;
                 console.log("RIGHT")
             }
             startTime = Number.POSITIVE_INFINITY
@@ -77,3 +81,9 @@ webgazer
 //     document.body.append(img)
 //     return img
 // }
+function stopCook() {
+    var hand1 = document.getElementById("clk");
+    var hand2 = document.getElementById("clk2");
+    hand1.style.animationPlayState = 'paused';
+    hand2.style.animationPlayState = 'paused';
+}

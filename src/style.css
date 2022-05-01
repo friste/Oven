@@ -57,6 +57,18 @@ body {
   left: 50%;
 }
 
+img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 100%;
+    top: 50px;
+    height: 395px;
+    width: 395px;
+    z-index: 4;
+    position: absolute;
+}
+
 .button {
   margin: 10px;
   margin-right: auto;

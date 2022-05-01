@@ -1,7 +1,7 @@
 var slider = $("#slider");
 
 slider.roundSlider({
-  radius:200,
+  radius:175,
   width:20,
   svgMode: false,
   pathColor: "#ee6161",

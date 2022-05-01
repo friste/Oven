@@ -63,8 +63,8 @@ img {
     margin-left: auto;
     border-radius: 100%;
     top: 50px;
-    height: 395px;
-    width: 395px;
+    height: 340px;
+    width: 340px;
     z-index: 5;
     position: absolute;
 }
@@ -216,8 +216,8 @@ img {
 }
 
 .dot {
-  height: 365px;
-  width: 365px;
+  height: 315px;
+  width: 315px;
   margin-right: auto;
   margin-left: auto;
   top: 65px;

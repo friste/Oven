@@ -1,11 +1,13 @@
 let dur = 30;
+// let dur = duration;
 let durString = dur.toString();
+start_tracking = true;
 let newDur = durString.concat("s");
-
 var nhand1 = document.getElementById("clk");
 var nhand2 = document.getElementById("clk2");
 nhand1.style.animationDuration = newDur;
 nhand2.style.animationDuration = newDur;
+
 
 
 let flag = false;
@@ -16,6 +18,8 @@ var defaults = {},
     one_hour = one_minute * 60,
     startDate = new Date(),
     clock = document.getElementById('time');
+
+
 
 
 if (sessionStorage.getItem("duration") >= 10 && sessionStorage.getItem("duration") <= 32) {
@@ -47,6 +51,7 @@ var requestAnimationFrame = (function() {
             window.setTimeout(callback, 1000 / 60);
         };
 }());
+
 
 tick();
 
@@ -134,7 +139,10 @@ function tick() {
         clock.innerText = parts.join(':');
 
         requestAnimationFrame(tick);
+
+    } else {
+
+        alert("Congratulations! Your Pizza is cooked!");
     }
 
 }
-

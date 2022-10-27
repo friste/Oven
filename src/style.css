@@ -30,8 +30,8 @@ body {
 .slider {
     margin-right: auto;
     margin-left: auto;
-    /* top: -260px; */
-    top: 20px;
+    top: -260px;
+    /* top: 20px; */
     position: absolute;
 }
 
@@ -72,7 +72,8 @@ img {
     margin: 10px;
     margin-right: auto;
     margin-left: auto;
-    /* top: 232px; */
+    top: 232px;
+    /*this*/
     width: 50px;
     height: 20px;
     text-decoration: none;
@@ -142,10 +143,12 @@ img {
 
 .timer .hand:first-child span {
     animation-name: spin1;
+    /* animation-play-state: paused; */
 }
 
 .timer .hand:last-child span {
     animation-name: spin2;
+    /* animation-play-state: paused; */
 }
 
 .timer.minute {
@@ -219,8 +222,8 @@ img {
     width: 315px;
     margin-right: auto;
     margin-left: auto;
-    /* top: 65px; */
     top: 65px;
+    /* top: 65px; */
     background-color: #131211;
     border-radius: 50%;
     position: absolute;

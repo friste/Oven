@@ -14,9 +14,11 @@ const right = window.innerWidth - window.innerWidth / 8
 const up = window.innerHeight / 8
 const down = window.innerHeight - window.innerHeight / 8
 
+
 webgazer
     .setGazeListener((data, time) => {
         if (data == null || direction == "no") return
+
         if (data.x < left && direction !== "L" && direction != "Reset") {
             startTime = time
             direction = "L"
@@ -33,21 +35,27 @@ webgazer
             startTime = time
             direction = "D"
         }
+
+        // if (start_tracking == true) {
         if (startTime + look_delay < time) {
             if (direction == "L" || direction == "U") {
                 // image.classList.add("left")
-                document.getElementById("pizza").src = "./PIZZAS/cheese/Raw_cheese_burnt.png";
-                pizza = "burnt"
-                stopCook()
-                flag = true;
-                console.log("LEFT")
+                if (start_tracking == true) {
+                    document.getElementById("pizza").src = "./PIZZAS/cheese/Raw_cheese_burnt.png";
+                    pizza = "burnt"
+                    stopCook()
+                    flag = true;
+                    console.log("LEFT")
+                }
             } else if (direction == "R" || direction == "D") {
                 // image.classList.add("right")
-                document.getElementById("pizza").src = "./PIZZAS/cheese/Raw_cheese_burnt.png";
-                pizza = "burnt"
-                stopCook()
-                flag = true;
-                console.log("RIGHT")
+                if (start_tracking == true) {
+                    document.getElementById("pizza").src = "./PIZZAS/cheese/Raw_cheese_burnt.png";
+                    pizza = "burnt"
+                    stopCook()
+                    flag = true;
+                    console.log("RIGHT")
+                }
             }
             startTime = Number.POSITIVE_INFINITY
             direction = "no"
@@ -59,6 +67,9 @@ webgazer
                 direction = "Reset"
             }, 200)
         }
+
+        // } //if true
+
     })
     .begin()
 
@@ -86,4 +97,5 @@ function stopCook() {
     var hand2 = document.getElementById("clk2");
     hand1.style.animationPlayState = 'paused';
     hand2.style.animationPlayState = 'paused';
+    alert("YIKES! You got distracted and burned the pizza!");
 }

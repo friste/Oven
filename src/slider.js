@@ -26,7 +26,6 @@ $("#slider").roundSlider({ "rangeColor": "#eb6262", "tooltipColor": "#FFFFFF" })
 const confirmButton = document.getElementById("button")
 confirmButton.textContent = "Cook"
 
-
 function traceEvent(e) {
     if (slider.getValue() >= 10 && slider.getValue() <= 32) {
         console.log("test");

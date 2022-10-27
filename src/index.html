@@ -1,19 +1,36 @@
+<script src="https://webgazer.cs.brown.edu/webgazer.js?" defer></script>
+<script src="web_script.js" defer></script>
+<!-- <script>
+    function showTimer() {
+        document.getElementById('timer').style.display = "block";
+        document.getElementById('pizza').style.display = "block";
+        button.style.visibility = "hidden";
+        button.style.display = "none";
+    }
+</script> -->
 <link rel="stylesheet" type="text/css" href="./style.css" />
 <img id="pizza" src="./PIZZAS/cheese/Raw_cheese4.png" alt="default cheese pizza">
-<div class="timer-group">
+
+<div id="timer" class="timer-group">
     <div class="timer minute">
-        <div class="hand" ><span id="clk"></span></div>
-        <div class="hand" ><span id="clk2"></span></div>
+        <div class="hand"><span id="clk"></span></div>
+        <div class="hand"><span id="clk2"></span></div>
+        <!-- <script>
+            var hand1 = document.getElementById("clk");
+            var hand2 = document.getElementById("clk2");
+            hand1.style.animationPlayState = 'paused';
+            hand2.style.animationPlayState = 'paused'; -->
+        <!-- </script> -->
     </div>
     <div class="clock">
         <p id="time">00:00:00</p>
     </div>
 </div>
+<!-- <input type="button" name="timer" value="Start" onclick="showTimer()" /> -->
+
 <!-- <span class="dot"></span> -->
 <script src="./script.js"></script>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://webgazer.cs.brown.edu/webgazer.js?" defer></script>
-<script src="web_script.js" defer></script>
 <!-- <script src="./webgazer.js"></script> -->

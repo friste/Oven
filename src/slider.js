@@ -44,5 +44,5 @@ function traceEvent(e) {
 confirmButton.onclick = function(ev) {
     sessionStorage.setItem("duration", slider.getValue())
         // alert("The timer duration will be " + sessionStorage.getItem("duration"))
-    window.location.href = "index.html"
+    window.location.href = "timer.html"
 }

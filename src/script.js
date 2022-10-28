@@ -1,4 +1,5 @@
 // let dur = 30;
+// let dur = sessionStorage.getItem("duration");
 let dur = sessionStorage.getItem("duration") * 60;
 let durString = dur.toString();
 start_tracking = true;
@@ -140,12 +141,12 @@ function tick() {
 
         requestAnimationFrame(tick);
 
-    } else if (burnt == false) {
+    } else if (burnt == true) {
+        console.log("PIZZA COOKED");
+        alert("YIKES! You got distracted and burned the pizza!");
+    } else {
 
         alert("Congratulations! Your Pizza is cooked!");
-    } else if (burnt == true) {
-
-        alert("YIKES! You got distracted and burned the pizza!");
     }
 
 }

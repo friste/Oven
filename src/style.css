@@ -30,8 +30,8 @@ body {
 .slider {
     margin-right: auto;
     margin-left: auto;
-    top: -260px;
-    /* top: 20px; */
+    /* top: -260px; pc */
+    top: 20px;
     position: absolute;
 }
 
@@ -72,7 +72,7 @@ img {
     margin: 10px;
     margin-right: auto;
     margin-left: auto;
-    top: 232px;
+    /* top: 232px; pc */
     /*this*/
     width: 50px;
     height: 20px;

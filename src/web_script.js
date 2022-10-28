@@ -3,8 +3,8 @@ window.saveDataAcrossSessions = true
     // let nextImageElement = getImage(true)
 let startTime = Number.POSITIVE_INFINITY
 let direction = null
-
-const look_delay = 1000 // 1 second
+let burnt = false;
+const look_delay = 700 // 0.7 second
     // const left = 0
     // const right = window.innerWidth
 
@@ -97,5 +97,6 @@ function stopCook() {
     var hand2 = document.getElementById("clk2");
     hand1.style.animationPlayState = 'paused';
     hand2.style.animationPlayState = 'paused';
-    alert("YIKES! You got distracted and burned the pizza!");
+    // alert("YIKES! You got distracted and burned the pizza!");
+    burnt = true
 }
